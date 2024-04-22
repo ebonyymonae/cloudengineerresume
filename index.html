@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Repository</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bugaki&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kawthar&display=swap">
     <style>
         body {
             text-align: center; /* Center-align text */
-            font-family: 'Bugaki', sans-serif; /* Bugaki font */
+            font-family: 'Kawthar', sans-serif; /* Kawthar font */
             background-image: url('https://media.giphy.com/media/5HK4TiiBeLSZq/giphy.gif'); /* Background image */
             background-size: cover; /* Cover the entire background */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Set height to viewport height */
         }
         .image-container {
             position: relative; /* Set position to relative */
@@ -21,16 +27,36 @@
             height: 200px; /* Set square height */
             background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
             position: absolute; /* Set position to absolute */
+            top: calc(50% - 100px); /* Center vertically */
+            left: calc(50% - 100px); /* Center horizontally */
         }
         img {
             max-width: 150px; /* Set max width for images */
             max-height: 150px; /* Set max height for images */
             position: absolute; /* Set position to absolute */
-            top: 25px; /* Adjust top position */
-            left: 25px; /* Adjust left position */
+            top: calc(50% - 75px); /* Center vertically */
+            left: calc(50% - 75px); /* Center horizontally */
         }
         #buttons-container {
             margin-top: 20px; /* Add margin to the top */
+        }
+        button {
+            font-family: 'Kawthar', sans-serif; /* Kawthar font for buttons */
+            background-color: #4CAF50; /* Green background color */
+            border: none; /* Remove border */
+            color: white; /* White text color */
+            padding: 15px 25px; /* Padding */
+            text-align: center; /* Center-align text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Make it inline block */
+            font-size: 16px; /* Font size */
+            margin: 4px 2px; /* Margin */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 5px; /* Border radius */
+            transition-duration: 0.4s; /* Transition duration */
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
     </style>
 </head>
@@ -40,12 +66,13 @@
         <a href="https://github.com/ebonyymonae/cloudengineerresume/blob/main/Ebony%20Moorer%20Resume%20CE%20pdf.pdf"><button>Resume</button></a>
     </div>
     <h1>Welcome to My GitHub Webpage for my Cloud Engineer Resume</h1>
+    <p>Ebony's Resume:</p>
     <a href="https://github.com/ebonyymonae/cloudengineerresume/blob/main/Ebony%20Moorer%20Resume%20CE%20pdf.pdf">Visit My GitHub Repository</a>
     <br>
     <div class="image-container">
-        <div class="square" style="top: 50px; left: 50px;"></div> <!-- First square -->
+        <div class="square"></div> <!-- First square -->
         <img src="https://source.unsplash.com/featured/?flower,field" alt="Random Flower Field Image">
-        <div class="square" style="top: 150px; left: 150px;"></div> <!-- Second square -->
+        <div class="square"></div> <!-- Second square -->
         <img src="https://source.unsplash.com/featured/?flower,field" alt="Random Flower Field Image">
     </div>
 </body>
